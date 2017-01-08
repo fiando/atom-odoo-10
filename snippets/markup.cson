@@ -1,0 +1,51 @@
+
+
+  "Odoo Structure Template":
+    "prefix":"odst"
+    "body":"""
+      <?xml version="1.0" encoding="utf-8" ?>
+      <odoo>
+        <data>
+          $1
+        </data>
+      </odoo>
+    """
+
+  "Odoo XPATH":
+    "prefix":"odx"
+    "body":"""
+      <xpath expr="${1://div[@id='wrapwrap']/header/div}" position="${2:after}">
+        ${3:<div class="container">
+          <div class="alert alert-info mt16" role="alert">
+            <strong>Welcome</strong> in our website!
+          </div>
+        </div>}
+      </xpath>
+    """
+
+  "Odoo Template":
+    "prefix":"odt"
+    "body":"""
+      <template id="$1" name="$2">
+        $3
+      </template>
+    """
+
+  "Odoo Template Call":
+    "prefix":"odc"
+    "body":"""
+      <t t-call="$1">
+        $2
+      </t>
+    """
+
+  "Odoo Snippet":
+    "prefix":"ods"
+    "body":"""
+      <template id="$1" inherit_id="website.snippets" name="$2">
+        <xpath expr="${3://div[@id='snippet_content']/div[@class='o_panel_body']}" position="${4:inside}">
+          <t t-snippet="theme_tutorial.snippet_testimonial"
+             t-thumbnail="/theme_tutorial/static/src/img/ui/snippet_thumb.jpg"/>
+        </xpath>
+      </template>
+    """

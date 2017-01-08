@@ -1,0 +1,17 @@
+".python":
+  "Odoo Manifest":
+    "prefix":"odm"
+    "body":"""
+      {
+        'name':'$1',
+        'description': '$2',
+        'version':'${3:1.0}',
+        'author':'$4',
+
+        'data': [
+          '${5:include/your_data}',
+        ],
+        'category': '${6:Theme/Creative}',
+        'depends': ['website'],
+      }
+    """
