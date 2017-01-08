@@ -2,7 +2,7 @@
   "name": "odoo-10-snippetset",
   "version": "1.0.0",
   "description": "A 'Odoo 10' snippetset.",
-  "repository": "https://github.com/fiando/atom-odoo",
+  "repository": "https://github.com/fiando/atom-odoo-10",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
